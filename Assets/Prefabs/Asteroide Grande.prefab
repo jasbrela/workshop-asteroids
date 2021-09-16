@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 2561154813057617959}
   - component: {fileID: 2561154813057617958}
   m_Layer: 8
-  m_Name: Asteroide
-  m_TagString: Untagged
+  m_Name: Asteroide Grande
+  m_TagString: BigAsteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,4 +135,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meuRigidbody: {fileID: 2561154813057618008}
+  smallAsteroidPrefab: {fileID: 2561154813057617955, guid: b0d38ccef98c4474fb99832315d85a76, type: 3}
   velocidadeMaxima: 2

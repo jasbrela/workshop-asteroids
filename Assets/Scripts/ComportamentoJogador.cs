@@ -17,7 +17,6 @@ public class ComportamentoJogador : MonoBehaviour
     private void Start()
     {
         _spriteBounds = GetComponent<SpriteRenderer>().sprite.bounds.extents;
-        Debug.Log(_spriteBounds);
         _bounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
     }
 
