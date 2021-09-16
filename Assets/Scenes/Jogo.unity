@@ -394,7 +394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabAsteroide: {fileID: 2561154813057617958, guid: a50089cb4b2106743919a264dab778c1, type: 3}
-  quantosAsteroides: 5
+  quantosAsteroides: 3
 --- !u!4 &1240833148
 Transform:
   m_ObjectHideFlags: 0
