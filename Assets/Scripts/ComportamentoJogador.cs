@@ -30,18 +30,18 @@ public class ComportamentoJogador : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
             Vector3 direcao = transform.up * aceleracao;
             meuRigidbody.AddForce(direcao, ForceMode2D.Force);
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             meuRigidbody.rotation += velocidadeAngular * Time.deltaTime;
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             meuRigidbody.rotation -= velocidadeAngular * Time.deltaTime;
         }
