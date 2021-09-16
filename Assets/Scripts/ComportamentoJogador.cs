@@ -11,6 +11,8 @@ public class ComportamentoJogador : MonoBehaviour
     public Rigidbody2D prefabProjetil;
     public float velocidadeProjetil = 10.0f;
 
+    [SerializeField] private AudioClip shoot;
+    
     private Vector3 _bounds;
     private Vector3 _spriteBounds;
 
@@ -29,7 +31,8 @@ public class ComportamentoJogador : MonoBehaviour
                 meuRigidbody.position,
                 Quaternion.identity
             );
-
+            AudioSource.PlayClipAtPoint(shoot, transform.position); 
+            
             projetil.velocity = transform.up * velocidadeProjetil;
         }
         

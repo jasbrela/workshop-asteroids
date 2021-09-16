@@ -13,7 +13,7 @@ public class DestroyWhenOutOfBounds : MonoBehaviour
 
     void Update()
     {
-        float tolerance = 1f;
+        float tolerance = 1.5f;
         if (transform.position.y < -bounds.y - tolerance ||
             transform.position.y > bounds.y + tolerance ||
             transform.position.x < -bounds.x - tolerance ||
