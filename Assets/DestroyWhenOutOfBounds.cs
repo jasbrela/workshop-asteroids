@@ -1,13 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DestroyWhenOutOfBounds : MonoBehaviour
 {
+    private Vector3 bounds;
+    private void Start()
+    {
+        bounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+    }
+
     void Update()
     {
-        Vector3 bounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
-        
         float tolerance = 1f;
         if (transform.position.y < -bounds.y - tolerance ||
             transform.position.y > bounds.y + tolerance ||
