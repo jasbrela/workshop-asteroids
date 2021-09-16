@@ -15,7 +15,7 @@ public class Score : MonoBehaviour
     
     void Update()
     {
-        _scoreText.text = $"Score: {_score}";
+        _scoreText.text = $"   Score: {_score}";
     }
 
     public static void AddScore(int value)
